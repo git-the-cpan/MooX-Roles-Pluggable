@@ -4,7 +4,7 @@
       "Jens Rehsack <rehsack@cpan.org>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.4007, CPAN::Meta::Converter version 2.132661",
+   "generated_by" : "ExtUtils::MakeMaker version 7.0401, CPAN::Meta::Converter version 2.150005",
    "license" : [
       "perl_5"
    ],
@@ -15,18 +15,29 @@
    "name" : "MooX-Roles-Pluggable",
    "no_index" : {
       "directory" : [
-         "t/inc"
+         "t",
+         "inc"
       ]
    },
    "prereqs" : {
       "build" : {
-         "requires" : {
-            "Test::More" : "0.90"
-         }
+         "requires" : {}
       },
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.40"
+            "ExtUtils::MakeMaker" : "0"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Module::CPANTS::Analyse" : "0.96",
+            "Test::CPAN::Changes" : "0",
+            "Test::CheckManifest" : "0",
+            "Test::Kwalitee" : "0",
+            "Test::Pod" : "0",
+            "Test::Pod::Coverage" : "0",
+            "Test::Pod::Spelling::CommonMistakes" : "0",
+            "Test::Spelling" : "0"
          }
       },
       "runtime" : {
@@ -34,22 +45,36 @@
             "Module::Pluggable" : "4.8",
             "Moo::Role" : "1.003000"
          }
-      }
-   },
-   "provides" : {
-      "MooX::Roles::Pluggable" : {
-         "file" : "lib/MooX/Roles/Pluggable.pm",
-         "version" : "0.002"
+      },
+      "test" : {
+         "requires" : {
+            "File::Basename" : "0",
+            "File::Spec" : "0",
+            "Moo" : "0",
+            "Test::More" : "0.9"
+         },
+         "suggests" : {
+            "MooX::Cmd" : "0.012",
+            "MooX::Options" : "4.001"
+         }
       }
    },
    "release_status" : "stable",
    "resources" : {
+      "bugtracker" : {
+         "mailto" : "bug-MooX-Roles-Pluggable@rt.cpan.org",
+         "web" : "http://rt.cpan.org/Public/Dist/Display.html?Name=MooX-Roles-Pluggable"
+      },
+      "homepage" : "https://metacpan.org/release/MooX-Roles-Pluggable",
       "license" : [
          "http://dev.perl.org/licenses/"
       ],
       "repository" : {
-         "url" : "https://github.com/rehsack/MooX-Roles-Pluggable"
+         "type" : "git",
+         "url" : "https://github.com:rehsack/MooX-Roles-Pluggable.git",
+         "web" : "https://github.com/rehsack/MooX-Roles-Pluggable"
       }
    },
-   "version" : "0.002"
+   "version" : "0.003",
+   "x_serialization_backend" : "JSON::PP version 2.27300"
 }

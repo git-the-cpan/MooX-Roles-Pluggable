@@ -3,27 +3,30 @@ abstract: 'Moo eXtension for pluggable roles'
 author:
   - 'Jens Rehsack <rehsack@cpan.org>'
 build_requires:
-  Test::More: 0.90
+  File::Basename: '0'
+  File::Spec: '0'
+  Moo: '0'
+  Test::More: '0.9'
 configure_requires:
-  Module::Build: 0.40
+  ExtUtils::MakeMaker: '0'
 dynamic_config: 1
-generated_by: 'Module::Build version 0.4007, CPAN::Meta::Converter version 2.132661'
+generated_by: 'ExtUtils::MakeMaker version 7.0401, CPAN::Meta::Converter version 2.150005'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+  version: '1.4'
 name: MooX-Roles-Pluggable
 no_index:
   directory:
-    - t/inc
-provides:
-  MooX::Roles::Pluggable:
-    file: lib/MooX/Roles/Pluggable.pm
-    version: 0.002
+    - t
+    - inc
 requires:
-  Module::Pluggable: 4.8
-  Moo::Role: 1.003000
+  Module::Pluggable: '4.8'
+  Moo::Role: '1.003000'
 resources:
+  bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=MooX-Roles-Pluggable
+  homepage: https://metacpan.org/release/MooX-Roles-Pluggable
   license: http://dev.perl.org/licenses/
-  repository: https://github.com/rehsack/MooX-Roles-Pluggable
-version: 0.002
+  repository: https://github.com:rehsack/MooX-Roles-Pluggable.git
+version: '0.003'
+x_serialization_backend: 'CPAN::Meta::YAML version 0.016'
